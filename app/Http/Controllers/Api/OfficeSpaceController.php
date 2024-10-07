@@ -12,7 +12,7 @@ class OfficeSpaceController extends Controller
     //
     public function index()
     {
-        $offices = OfficeSpace::withCount('city')->get();
+        $offices = OfficeSpace::with('city')->get();
 
         return OfficeSpaceResource::collection($offices);
     }

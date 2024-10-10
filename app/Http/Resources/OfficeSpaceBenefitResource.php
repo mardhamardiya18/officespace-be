@@ -16,7 +16,7 @@ class OfficeSpaceBenefitResource extends JsonResource
     {
         return [
             'id'        => $this->id,
-            'photo'      => $this->photo,
+            'name'      => $this->name,
         ];
     }
 }

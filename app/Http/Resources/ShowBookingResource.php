@@ -24,7 +24,7 @@ class ShowBookingResource extends JsonResource
             'total_amount'  => $this->total_amount,
             'started_at'    => $this->started_at,
             'ended_at'      => $this->ended_at,
-            'officeSpace'   => $this->whenLoaded('officeSpace')
+            'office'   => $this->whenLoaded('officeSpace')
         ];
     }
 }
